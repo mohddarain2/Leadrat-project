@@ -4,9 +4,10 @@ import { MdOutlineChair } from "react-icons/md";
 
 const IconDetails = () => {
   return (
+    <div className="positionHandle">
     <div className="bottom-container">
       <div>
-        <h3>Key to Seat Layout:</h3>
+       
         <ul>
           <li>
             <MdOutlineChair className="available seat" />
@@ -15,15 +16,16 @@ const IconDetails = () => {
 
           <li>
             <MdOutlineChair className="unavailable size" />
-            <p>Unavailable</p>
+            <p>Sold</p>
           </li>
 
           <li>
             <MdOutlineChair className="yourselection size" />
-            <p>Your Selection</p>
+            <p>Selected</p>
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

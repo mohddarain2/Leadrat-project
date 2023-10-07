@@ -1,5 +1,5 @@
 import "./App.css";
-import AnimatedBackground from "./Components/AnimatedBackground/AnimatedBackground";
+
 import IconDetails from "./Components/IconDetails/IconDetails";
 import Main from "./Components/MainComponent/Main";
 import { useState } from "react";
@@ -18,12 +18,12 @@ function App() {
 
   return (
     <div className="outer_container">
-      <AnimatedBackground />
+      
       <div className="main_container">
         <div className="main_container_inner">
           <div className="App">
             <div className="dropdown">
-              <label htmlFor="tickettype">Ticket Type:</label>
+              <label htmlFor="tickettype">Ticket </label>
               <select
                 id="tickettype"
                 value={ticketType}
@@ -33,13 +33,13 @@ function App() {
                 <option value="Premium">Premium</option>
               </select>
 
-              <label htmlFor="qty">Ticket Quantity:</label>
+              <label htmlFor="Quantity">How Many Seats? :</label>
               <select
-                id="qty"
+                id="Quantity"
                 value={quanityOfTicker}
                 onChange={quantityHandler}
               >
-                <option value="">Qnty</option>
+                <option value="">QTY</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

@@ -1,11 +1,14 @@
 .container {
   width: 100vw;
+  margin-left: 50px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-top: 1px solid black;
   border-left: 1px solid black;
+  border: none;
 }
 
 .selected {
@@ -22,9 +25,10 @@
 
 .seat {
   filter: invert(0%) sepia(0%) saturate(1924%) hue-rotate(288deg)
-    brightness(90%) contrast(106%);
+    brightness(90%) contrast(100%);
   width: 35px;
   height: 35px;
+  
 }
 
 .size {
@@ -33,24 +37,20 @@
 }
 
 .btn {
-  margin-top: 50px;
-  width: 100px;
-  height: 30px;
-  /* position: absolute; */
+  
+  background-color: white; /* Green */
   color: black;
-  background-color: transparent;
-  /* bottom: 10px;
-  right: 15%; */
-  border: none;
-  outline: none;
-  border: 2px solid black;
-  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px ;
+  transition-duration: 0.4s;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 .btn:hover {
+  background-color: #00f7a6;
   color: white;
-  background-color: rgb(255, 0, 111);
 }
 
 .hover:hover {
@@ -60,10 +60,10 @@
 }
 
 .screen-text {
-  padding: 20px;
-  border: 2px dotted black;
-  box-shadow: 0px 10px 5px #888888;
-  margin: 30px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 5px 5px #888888;
+  margin: 20px;
 }
 
 select {

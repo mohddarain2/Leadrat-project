@@ -1,18 +1,21 @@
 .bottom-container {
   width: 100%;
   display: flex;
+ 
   justify-content: center;
   padding: 10px;
   /* align-items: center; */
 }
 
+
 .bottom-container ul {
   display: flex;
   justify-content: start;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
 }
 .bottom-container ul li {
+  padding-left: 30px;
   display: flex;
   justify-content: start;
   align-items: center;

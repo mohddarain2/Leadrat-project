@@ -58,8 +58,8 @@ function Main(props) {
   const [seats, setSeats] = useState(
     layout.map((item) =>
       item.map((data) => ({
-        id: data,
-        isZero: data,
+        id: data, // 0 
+        isZero: data, //0
         isSelected: false,
         isBooked: false,
         type: "standard",
@@ -123,7 +123,7 @@ function Main(props) {
   };
   return (
     <div className="container">
-      <h1 className="screen-text">Screen This Way</h1>
+      <h3 className="screen-text">All eyes this way please!</h3>
       {seats.map((row, index1) => {
         return (
           <div key={index1} style={{ display: "flex", width: "100%" }}>
@@ -154,9 +154,7 @@ function Main(props) {
         );
       })}
 
-      <button className="btn" onClick={proceedHandler}>
-        PROCEED
-      </button>
+      
       <ToastContainer
         position="top-center"
         autoClose={1000}
@@ -169,6 +167,9 @@ function Main(props) {
         pauseOnHover
         theme="light"
       />
+      <button className="btn" onClick={proceedHandler}>
+        SEAT LOCK
+      </button>
     </div>
   );
 }
