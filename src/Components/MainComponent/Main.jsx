@@ -133,7 +133,7 @@ function Main(props) {
             {row.map((seat, index2) => (
               <>
                 {seat.isZero !== 0 ? (
-                  <MdOutlineChair
+                  <MdOutlineChair 
                     onClick={() => bookHandler(seat.id)}
                     className={` ${
                       seat.isSelected
@@ -168,7 +168,7 @@ function Main(props) {
         theme="light"
       />
       <button className="btn" onClick={proceedHandler}>
-        SEAT LOCK
+        Proceed
       </button>
     </div>
   );

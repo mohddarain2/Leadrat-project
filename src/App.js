@@ -52,6 +52,7 @@ function App() {
                 <option value="10">10</option>
               </select>
             </div>
+            <hr style={{border:"2px solid black"}}/>
             <div className="left">
               <Main
                 type={ticketType}

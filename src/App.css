@@ -5,7 +5,9 @@
   font-family: monospace;
   overflow-x: hidden;
   font-family: 'Times New Roman', Times, serif
+  
 }
+
 
 html {
   height: 100%;
@@ -13,7 +15,7 @@ html {
 
 body {
   margin: 0;
-  background: #e79f7b;
+  background:#66ffff;
 }
 
 h3 {
@@ -44,7 +46,9 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
+ background: grey;
+ color: white;
 }
 
 .App {

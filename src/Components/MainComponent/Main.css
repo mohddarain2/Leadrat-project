@@ -36,9 +36,10 @@
   height: 35px;
 }
 
+
 .btn {
   
-  background-color: white; /* Green */
+  background-color: grey; /* Green */
   color: black;
   padding: 10px 20px;
   text-align: center;
